@@ -32,6 +32,8 @@ router.get('/getAll',async (req,res)=>{
         res.json(data)
     }
     catch(error){
+        // Temporary error log
+        console.log(`Error message ${error}`)
         res.status(500).json({message:error.message})
     }
 })
